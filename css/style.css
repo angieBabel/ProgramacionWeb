@@ -1,5 +1,6 @@
-body
+#wrapper
 {
-	background-color: black;
-	color: rgb(232,12,122);
+	width: 900px;
+	height: 600px;
+	background-color: #0D7FFF;
 }
