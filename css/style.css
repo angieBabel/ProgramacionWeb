@@ -1,6 +1,19 @@
 #wrapper
 {
 	width: 900px;
-	height: 600px;
+	height: 1150px;
 	background-color: #0D7FFF;
+	margin: auto auto;
+}
+#wrapper>header
+{
+	width: 100%;
+	height: 150px;
+	background-color: #17E882;
+}
+#wrapper>footer
+{
+	width: 100%;
+	background-color: #FF9F9F;
+	color: #2F5251;
 }
