@@ -38,3 +38,29 @@ nav ul li a:hiver
 	background-color: blue;
 	color: white;
 }
+
+.uno p
+{
+	display: inline;
+	width:  286px;
+	border: 2px dotted cyan;
+	text-align: justify;
+}
+#pizq
+{
+	float: left;
+	margin-left: 5px;
+	margin-right: 12px;
+}
+#pder
+{
+	float: right;
+	margin-left: 0px;
+	margin-right: 2px;
+}
+#pcent
+{
+	float: left;
+	margin-left: 0px;
+	margin-right: 5px;
+}
