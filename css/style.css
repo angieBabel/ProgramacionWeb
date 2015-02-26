@@ -1,7 +1,7 @@
 #wrapper
 {
 	width: 900px;
-	height: 1080px;
+	height: 1180px;
 	background-color: #0D7FFF;
 	margin: auto auto;
 }
@@ -19,4 +19,22 @@
 	color: #2F5251;
 	text-align: center;
 	padding-top:15px;
+}
+nav ul
+{
+	list-style-type: circle;
+}
+nav ul a
+{
+	text-decoration: none;
+}
+nav ul li
+{
+	display: inline;
+}
+
+nav ul li a:hiver
+{
+	background-color: blue;
+	color: white;
 }
