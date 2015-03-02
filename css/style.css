@@ -69,4 +69,10 @@ nav ul li a:hiver
 	margin-right: 5px;
 }
 
-wrapper
+body
+{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 14px;
+	/*font-size: 1em;
+	font-size: 100%;*/
+}
