@@ -1,3 +1,9 @@
+
+@font-face{
+	font-family: "Mifuente";
+	src:url("../fonts/Lora-Regular.ttf");
+}
+
 #wrapper
 {
 	width: 900px;
@@ -73,13 +79,14 @@ nav ul li a:hiver
 
 body
 {
-	font-family: "Times New Roman", Georgia, Serif;
+	font-family: "Mifuente";
 	font-size: 14px;
 	/*font-size: 1em;
 	font-size: 100%;*/
 }
 
-@font-face{
+/*@font-face{
 	font-family: "cosa";
 	src:url('');
-}
+}*/
+
