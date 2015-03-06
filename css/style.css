@@ -6,35 +6,37 @@
 
 #menu
 {
-	background-color: black;
+	background-image: url("../img/bg.png");
+	background-repeat:repeat-x;
+	height: 33px;
 }
 #menu ul a
 {
+	
 	text-decoration: none;
 } 
-#pagina
-{
-	width: 100%;
-	height: 100%;
+#menu ul li{
+	display: inline;
+
+}
+#pagina{background-image: url("../img/fondo.jpg");background-repeat: no-repeat;}
+
+#cabecera1{	width: 70%; height: 100%; margin-left: 15%;}
+#cuerpo{ width: 70%; height: 100%; margin-left: 15%;}
+#pie2{
+	background-color: #81A635;	
+	width: 70%; 
+	height: 100%; 
+	margin-left: 15%;
 }
 
-
-/*body
-{
-	font-family: "Mifuente";
-	font-size: 16px;
-	/*font-size: 1em;
-	font-size: 100%;
-}*/
 #pie1
 {
+	width: 100%;
 	background-color: #E8780E;
 }
-#pie2
-{
-	width: 70%;
-	background-color: #49B035;
-}
+#patrocinadores{ width: 70%; height: 100%; margin-left: 15%;}
+
 #informes
 {
 
