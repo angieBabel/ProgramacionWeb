@@ -4,17 +4,28 @@
 	<meta charset="UTF-8">
 	<title>EjemploJS</title>
 	<script type="text/javascript">
-	function saludo()
-	{
-		alert('Hola');
-	}
+		function saludo()
+		{
+			alert('Hola');
+		}
+		function aumenta()
+		{
+			
+			var parrafo= document.getElementById("p1");
+			var size=parrafo.getAttribute("size");
+			alert(parrafo.innerHTML);
+		}
+		function disminuye()
+		{
+			alert('disminuye');
+		}
 	</script>
 </head>
 <body onload="saludo()">
 	<p onmouseover="this.innerHTML='<b>Mouse fuera</b>'" onmouseout="this.innerHTML='<i>Mouse arriba</i>'">
 	<i>Mouse over this text to change it</i>
 	</p>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae natus autem suscipit nesciunt magni illo quos commodi rerum tempore dolorum architecto velit quidem, animi quasi voluptatum, soluta repellendus. Corporis, ipsam.
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae natus autem suscipit nesciunt magni illo quos commodi rerum tempore dolorum architecto velit quidem, animi quasi voluptatum, soluta repellendus. Corporis, ipsam.
 	Odit quam eius delectus alias nemo dolorem dicta cumque amet eveniet eum ut, praesentium, tempora dolor. Accusantium suscipit, et in autem earum, aperiam saepe nulla deserunt quidem doloribus, harum ut.
 	Expedita rerum minus ipsum corporis alias beatae autem cum magnam fugiat repellat assumenda non error perspiciatis provident quam, eius sapiente pariatur dicta quisquam optio doloribus quas! Maiores sit nihil cum.</p>
 	<button onclick="aumenta()">+</button>
