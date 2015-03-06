@@ -4,6 +4,42 @@
 	src:url("../fonts/Lora-Regular.ttf");
 }
 
+#menu
+{
+	background-color: black;
+}
+#menu ul a
+{
+	text-decoration: none;
+} 
+#pagina
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*body
+{
+	font-family: "Mifuente";
+	font-size: 16px;
+	/*font-size: 1em;
+	font-size: 100%;
+}*/
+#pie1
+{
+	background-color: #E8780E;
+}
+#pie2
+{
+	width: 70%;
+	background-color: #49B035;
+}
+#informes
+{
+
+}
+
 #wrapper
 {
 	width: 900px;
@@ -79,16 +115,6 @@ nav ul li a:hiver
 	margin-right: 5px;
 }
 
-body
-{
-	font-family: "Mifuente";
-	font-size: 14px;
-	/*font-size: 1em;
-	font-size: 100%;*/
-}
 
-/*@font-face{
-	font-family: "cosa";
-	src:url('');
-}*/
+
 
