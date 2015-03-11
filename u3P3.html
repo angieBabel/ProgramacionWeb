@@ -47,13 +47,13 @@
 		function buscar(){
 			var b=document.getElementById('area').value;
 			//alert(b);
-			var p=document.getElementById('p1').innerText;
+			var p=document.getElementById('p1').innerHTML;
 			var c=p.search(b)
 			//alert(c);
 			if(c>=0)
 			{
 				alert(b+"palabra encontrada en la posicion "+c);
-				a
+				cambia(p,b);
 			}
 			else
 			{
@@ -61,7 +61,18 @@
 			}
 
 		}
+
+		function cambia(texto,subcadena)
+		{
+			texto=texto.split(subcadena).join("<span class='bkRed'>"+subcadena+"</span>");
+			document.getElementById('p1').innerHTML=texto;
+		}
 	</script>
+	<style >
+		.bkRed{
+			background-color: yellow;
+		}
+	</style>
 </head>
 <body >
 	<p id="p1" style="font-size:14px">
