@@ -5,14 +5,22 @@
 	<title>Ejercicio6</title>
 	<script>
 	function addNodo(){
+		var texto=document.getElementById('valor').value;
+		texto=texto+"<button onclick='delNodo();'></button>"
+		var li_node=document.createElement('li');
+		var text_node=document.createTextNode(texto);
+
+		li_node.appendChild(text_node);
+		var lista_ul=document.getElementById('lista');
+		lista_ul.appendChild(li_node);
 
 	}
 	</script>
 </head>
 <body>
 	<h2>Lista dinamica</h2>
-	<ul></ul>
-	<input type="text" name="valor">
-	<button>Agregar Elemento li</button>
+	<ul id="lista"></ul>
+	<input type="text" id="valor">
+	<button onclick="addNodo();">Agregar Elemento li</button>
 </body>
 </html>
