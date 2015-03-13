@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio6</title>
+	<script>
+		function cambio(color){	
+			document.body.style.backgroundColor=color;
+		}
+
+		function cambioa()
+		{
+			var colo=new Array('red','green','blue','yellow');
+			co=Math.round(Math.random()*colo.length);
+			document.body.style.backgroundColor=colo[co];
+			setTimeout('cambioa()','2000'); // 3000 = 3 segundos
+		}
+
+		function cambios()
+		{
+			
+			var colo=new Array('red','green','blue','yellow');
+			if(co>=0 & co<4){
+				document.body.style.backgroundColor=colo[co];
+				++co;
+				alert(co);
+			}
+			else
+			{
+				co=0;
+				alet('pasa limites ')
+			}
+			setTimeout('cambios()','2000'); 
+		}
+	</script>
+</head>
+<body onload="cambios()">
+	<h1>Cambio de fondo</h1>
+	<button onclick="cambio('#169CFA')">Azul</button>
+	<button onclick="cambio('#610504')" >Rojo</button>
+	<button onclick="cambio('Yellow')" >Amarillo</button>
+	<button onclick="cambio('Green')">Verde</button>
+
+</body>
+</html>
