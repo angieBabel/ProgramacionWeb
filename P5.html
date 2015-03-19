@@ -10,31 +10,15 @@
 
 		function cambioa()
 		{
-			var colo=new Array('red','green','blue','yellow');
+			var colo=new Array('#ECD078', '#D95B43', '#C02942', '#542437', '#53777A');
 			co=Math.round(Math.random()*colo.length);
 			document.body.style.backgroundColor=colo[co];
 			setTimeout('cambioa()','2000'); // 3000 = 3 segundos
 		}
 
-		function cambios()
-		{
-			
-			var colo=new Array('red','green','blue','yellow');
-			if(co>=0 & co<4){
-				document.body.style.backgroundColor=colo[co];
-				++co;
-				alert(co);
-			}
-			else
-			{
-				co=0;
-				alet('pasa limites ')
-			}
-			setTimeout('cambios()','2000'); 
-		}
 	</script>
 </head>
-<body onload="cambios()">
+<body onload="cambioa()">
 	<h1>Cambio de fondo</h1>
 	<button onclick="cambio('#169CFA')">Azul</button>
 	<button onclick="cambio('#610504')" >Rojo</button>
