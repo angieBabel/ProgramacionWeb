@@ -3,5 +3,8 @@ table{
 }
 
 table tr td{
-	border: 2px solid black;
+	border: 2px solid cyan;
+}
+table td{
+	border:2px solid cyan;
 }
