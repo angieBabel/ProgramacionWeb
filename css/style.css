@@ -5,6 +5,8 @@ table{
 table tr td{
 	border: 2px solid cyan;
 }
-table td{
+table thead tr{
 	border:2px solid cyan;
+	background-color: black;
+	color: white;
 }
