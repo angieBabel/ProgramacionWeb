@@ -29,25 +29,28 @@ $(document).ready(function(){
 
 //Cambia Color
 	$('table tbody').on('click','tr', function(){
+		var nf=$(this).text();
 		var bc=$(this).css('background-color');
 
 		if (bc === 'rgb(112, 186, 100)'){
 			$(this).css ('background-color','rgb(255, 255, 255)');
 			$(this).css('color','black');
+			$('#f').text(nf);
 
 		}else{
 			$(this).css('background-color','rgb(112, 186, 100)');
 			$(this).css('color','yellow');
+			$('#f').text(nf);
+			//$('#f').append(nf);
 		}
 
 	});
+
 
 	//Decir que fila es
 	$('table tbody').on('click','tr',function(){
 			var nf=$(this).text();
 			$('#nof').val(nf);
-
-			$('p').a
 
 	});
 
