@@ -6,7 +6,7 @@ $(document).ready(function(){
 		var columna='<tr>';
 
 		for(var i=0;i<ncolumnas;i++){
-			
+
 			if (i>0){
 				columna+='<td></td>';
 			}else
@@ -27,24 +27,30 @@ $(document).ready(function(){
 
 	});
 
+//Cambia Color
 	$('table tbody').on('click','tr', function(){
-		var nf=$(this).text();
-		var bc=$(this).css('background-Color');
-		alert(bc)
-		//0,128,0
-		/*if( ($(this).css('background-color'))== rgba(0,0,0,0) ){*/
-			//alert('aqui');
-			$(this).css('background-color','green');
-			$(this).css('color','yellow');			
-		/*}
-		else
-		{
-			
-			$(this).css('color','black');				
-		}*/
+		var bc=$(this).css('background-color');
 
-		$('#nof').val(nf);
+		if (bc === 'rgb(112, 186, 100)'){
+			$(this).css ('background-color','rgb(255, 255, 255)');
+			$(this).css('color','black');
+
+		}else{
+			$(this).css('background-color','rgb(112, 186, 100)');
+			$(this).css('color','yellow');
+		}
+
 	});
+
+	//Decir que fila es
+	$('table tbody').on('click','tr',function(){
+			var nf=$(this).text();
+			$('#nof').val(nf);
+
+			$('p').a
+
+	});
+
 });
 
 //poner de color y que fila es y si se da click de nuevo debe quitar el color y desaparecer
