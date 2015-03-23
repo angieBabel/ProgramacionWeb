@@ -35,7 +35,7 @@ $(document).ready(function(){
 		if (bc === 'rgb(112, 186, 100)'){
 			$(this).css ('background-color','rgb(255, 255, 255)');
 			$(this).css('color','black');
-			$('#f').text(nf);
+			$('#f').text('');
 
 		}else{
 			$(this).css('background-color','rgb(112, 186, 100)');
