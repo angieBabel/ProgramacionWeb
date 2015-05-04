@@ -7,17 +7,19 @@
   <script type="text/javascript" src="external/jquery/jquery.js"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
   <script>
-    $(function(){
+  $(function(){
+    //$(function(){
       $.ajax({
         url:"opciones.php",
-        datatype:"json",
-        complete: function(data){
-          alert(data);
-          var info=eval(data);
-          alert(info);
+        dataType:"json",
+        success: function(data){
+          data.forEach(function (x) {
+            var opcion="<option value'"+x.Id+"'>"+x.nombre+"</option>";
+            $('#colonia').append(opcion);
+          });
         }
-      });
-    });
+      })
+  //});
 
     function ajax1(){
       $.ajax({
@@ -40,8 +42,9 @@
   </script>
 </head>
 <body>
+  nombre:
   <input type="text" name="nom" id="nom" placeholder="Nombre">
-  <select name="" id="colonia">
+  Colonia:<select id="colonia">
 
   </select>
 

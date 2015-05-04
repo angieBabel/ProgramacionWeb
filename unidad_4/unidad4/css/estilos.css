@@ -1,0 +1,52 @@
+body{
+	background: ##9a9ea1;
+	background-image: url("../img/zenbg-2.png");
+	background-repeat: repeat;
+	font-family: arial;
+}
+
+nav li{
+    display: inline;
+}
+nav{
+	background-color: #7F7E7E;
+	text-align: center;
+	border: 1px solid #000;
+	width: 100%;
+	padding-top: 3px;
+}
+header{
+	margin-top: 10px;
+    width: 100%;
+    height: 100px;
+	border: 1px solid #000;
+	text-align: center;
+	background-color: #000;
+	background-image: url('../img/agenda3.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+button, input{
+	margin-bottom:  7px;
+}
+h1{
+	text-align: center;
+}
+#contenido{
+	border: 1px solid #000;	
+	width: 380px;
+	display: none;
+	background-color: #000;
+	padding: 10px 10px;
+	color: #fff;
+}
+
+#wrap{
+	width: 400px;
+	height: auto;
+	margin: 0 auto;
+
+	-webkit-box-shadow: 1px 10px 23px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 1px 10px 23px 0px rgba(0,0,0,1);
+	box-shadow: 1px 10px 23px 0px rgba(0,0,0,1);
+}
