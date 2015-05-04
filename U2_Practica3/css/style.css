@@ -1,0 +1,40 @@
+#wrapper
+{
+	width: 900px;
+	height: 1180px;
+	background-color: #0D7FFF;
+	margin: auto auto;
+}
+#wrapper>header
+{
+	width: 100%;
+	height: 150px;
+	background-color: #17E882;
+}
+#wrapper>footer
+{
+	width: 100%;
+	height:30px;
+	background-color: #FF9F9F;
+	color: #2F5251;
+	text-align: center;
+	padding-top:15px;
+}
+nav ul
+{
+	list-style-type: circle;
+}
+nav ul a
+{
+	text-decoration: none;
+}
+nav ul li
+{
+	display: inline;
+}
+
+nav ul li a:hiver
+{
+	background-color: blue;
+	color: white;
+}

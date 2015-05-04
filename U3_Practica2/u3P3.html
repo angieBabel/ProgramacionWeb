@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EjemploJS</title>
+	<script type="text/javascript">
+
+		function aumenta()
+		{
+			
+			var p1= document.getElementById('p1').style.fontSize;
+			//alert("font-size"+p1);
+			var t=parseInt(p1.replace("px",""));
+			//alert(t);
+			t=t+5;
+			document.getElementById('p1').style.fontSize=t+"px";
+		}
+		function disminuye()
+		{
+			//alert('disminuye');
+			var p1= document.getElementById('p1').style.fontSize;
+			//alert("font-size"+p1);
+			var t=parseInt(p1.replace("px",""));
+			//alert(t);
+			if(t>14){
+				t=t-2;
+				document.getElementById('p1').style.fontSize=t+"px";
+			}
+		}
+
+		function mayusculas()
+		{
+			var p1=document.getElementById('p1').innerText;
+			p1= p1.toUpperCase();
+			document.getElementById('p1').innerText=p1;
+			
+		}
+
+		function minusculas()
+		{
+
+			var p1=document.getElementById('p1').innerText;
+			p1=p1.toLowerCase();
+			document.getElementById('p1').innerText=p1;
+
+		}
+		function buscar(){
+			var b=document.getElementById('area').value;
+			//alert(b);
+			var p=document.getElementById('p1').innerHTML;
+			var c=p.search(b)
+			//alert(c);
+			if(c>=0)
+			{
+				alert(b+"palabra encontrada en la posicion "+c);
+				cambia(p,b);
+			}
+			else
+			{
+				alert("palabra no encontrada");
+			}
+
+		}
+
+		function cambia(texto,subcadena)
+		{
+			texto=texto.split(subcadena).join("<span class='bkRed'>"+subcadena+"</span>");
+			document.getElementById('p1').innerHTML=texto;
+		}
+	</script>
+	<style >
+		.bkRed{
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body >
+	<p id="p1" style="font-size:14px">
+	<i>Mouse over this text to change it</i>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae natus autem suscipit nesciunt magni illo quos commodi rerum tempore dolorum architecto velit quidem, animi quasi voluptatum, soluta repellendus. Corporis, ipsam.
+	Odit quam eius delectus alias nemo dolorem dicta cumque amet eveniet eum ut, praesentium, tempora dolor. Accusantium suscipit, et in autem earum, aperiam saepe nulla deserunt quidem doloribus, harum ut.
+	Expedita rerum minus ipsum corporis alias beatae autem cum magnam fugiat repellat assumenda non error perspiciatis provident quam, eius sapiente pariatur dicta quisquam optio doloribus quas! Maiores sit nihil cum.</p>
+	<button onclick="aumenta()">+</button>
+	<button onclick="disminuye()">-</button>
+	<button onclick="mayusculas()">Mayusculas</button>
+	<button onclick="minusculas()">Minusculas</button>
+	<input type="text" id="area">
+	<button onclick="buscar()">Buscar</button>
+</body>
+</html>

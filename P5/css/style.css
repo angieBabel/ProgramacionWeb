@@ -1,0 +1,94 @@
+
+@font-face{
+	font-family: "Mifuente";
+	src:url("../fonts/Lora-Regular.ttf");
+}
+
+#wrapper
+{
+	width: 900px;
+	height: 950px;
+	background-color: #0D7FFF;
+	margin: auto auto;
+}
+#wrapper>header
+{
+	width: 100%;
+	height: 150px;
+	background-color: #17E882;
+	background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	
+}
+#wrapper>footer
+{
+	width: 100%;
+	height:50px;
+	margin-top: 220px;
+	background-color: #FF9F9F;
+	color: #2F5251;
+	text-align: center;
+	padding-top:15px;
+	font-size: 10px;
+	font-family: "mifuente";
+	font-size: 12px;
+}
+nav ul
+{
+	list-style-type: circle;
+}
+nav ul a
+{
+	text-decoration: none;
+}
+nav ul li
+{
+	display: inline;
+}
+
+nav ul li a:hiver
+{
+	background-color: blue;
+	color: white;
+}
+
+.uno p
+{
+	display: inline;
+	width:  286px;
+	border: 2px dotted cyan;
+	text-align: justify;
+}
+#pizq
+{
+	float: left;
+	margin-left: 5px;
+	margin-right: 12px;
+}
+#pder
+{
+	float: right;
+	margin-left: 0px;
+	margin-right: 2px;
+}
+#pcent
+{
+	float: left;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+body
+{
+	font-family: "Mifuente";
+	font-size: 14px;
+	/*font-size: 1em;
+	font-size: 100%;*/
+}
+
+/*@font-face{
+	font-family: "cosa";
+	src:url('');
+}*/
+
